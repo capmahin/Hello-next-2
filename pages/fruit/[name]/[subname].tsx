@@ -7,7 +7,8 @@ export default function FruitName() {
     console.log(router)
 
     function takeMeHome() {
-        router.push('/')
+        // router.push('/')
+        router.replace('/')
     }
 
     return <h1>Hello from 1st segment {router.query.name} {router.query.subname}
