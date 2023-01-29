@@ -7,7 +7,7 @@ export default function FruitName() {
     console.log(router)
 
 
-    return <h1>Hello from 1st segment</h1>
+    return <h1>Hello from 1st segment {router.query.name} {router.query.subname}</h1>
 }
 
 //http://localhost:3000/fruit/hlww
