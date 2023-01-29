@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <div>
             <h1 className={styles.description}> Welcome to
-              <Link href="/mahin">
+              <Link href="/mahin/activities">
 
                 My Blog
 
