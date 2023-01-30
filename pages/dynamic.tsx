@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next"
 
-export const getStaticProps: GetStaticProps = async context => {
+export const getStaticProps: GetStaticProps = async (context) => {
     return {
         props: {
             myFavNum: 4
