@@ -8,6 +8,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
 }
 
-export default function Dynamic() {
-    return <h1>Dynamic</h1>
+export default function Dynamic(props) {
+    return <h1>Dynamic Number -{props.myFavNum}</h1>
 }
