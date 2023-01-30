@@ -20,8 +20,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
         paths: [{
-            params: {}
-        }],
+            params: { name: 'hello' }
+        }, { params: { name: 'world' } }],
         fallback: false
     }
 }
