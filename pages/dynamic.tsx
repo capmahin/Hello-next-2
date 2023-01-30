@@ -8,6 +8,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const txt = fs.readFileSync(path.join(process.cwd(), 'public/robots.txt'), 'utf8')
 
     return {
+        revalidate: 10,
         props: {
             myFavNum: txt
         }
