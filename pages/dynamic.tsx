@@ -1,12 +1,15 @@
 import { GetStaticProps } from "next"
+import path from 'path'
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
     const fs = require('fs')
 
+    const txt = fs.readFileSync(path.join(process.cwd(), 'public/robots.txt'), 'utf8')
+
     return {
         props: {
-            myFavNum: 10
+            myFavNum: txt
         }
     }
 }
