@@ -16,8 +16,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
         }
     }
 }
+//start
 //localhost:3000/fruit/hello => take the output =>store it on the disk
 //localhost:3000/fruit/world => take the output =>store it on the disk
+//Done
 
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
