@@ -1,9 +1,12 @@
 import { GetStaticProps } from "next"
 
 export const getStaticProps: GetStaticProps = async (context) => {
+
+    const fs = require('fs')
+
     return {
         props: {
-            myFavNum: 4
+            myFavNum: 10
         }
     }
 }
