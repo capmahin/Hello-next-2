@@ -9,6 +9,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 
 
+
     return {
         revalidate: 10,
         props: {
@@ -26,7 +27,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         paths: [{
             params: { name: 'hello' }
         }, { params: { name: 'world' } }],
-        fallback: false
+        fallback: true
     }
 }
 
